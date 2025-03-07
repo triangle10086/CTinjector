@@ -3,6 +3,12 @@
 
 #include <QMainWindow>
 
+// 前向声明
+class WeightModePage;
+class ManualModePage;
+class InjectionPlanPage;
+class InjectionRecordPage;
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -19,5 +25,18 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    WeightModePage *weightModePage;
+    ManualModePage *manualModePage;
+    InjectionPlanPage *injectionPlanPage;
+    InjectionRecordPage *injectionRecordPage;
+
+private slots:
+    void on_weightModeButton_clicked();
+    void on_manualModeButton_clicked();
+    void on_injectionPlanButton_clicked();
+    void on_injectionRecordButton_clicked();
+
+
 };
 #endif // MAINWINDOW_H
