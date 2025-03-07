@@ -23,10 +23,10 @@
       <height>401</height>
      </rect>
     </property>
-    <widget class="WeightModePage" name="WeightModePage"/>
-    <widget class="InjectionPlanPage" name="InjectionPlanPage"/>
-    <widget class="InjectionRecordPage" name="InjectionRecordPage"/>
-    <widget class="ManualModePage" name="ManualModePage"/>
+    <widget class="QWidget" name="WeightModePage"/>
+    <widget class="QWidget" name="InjectionPlanPage"/>
+    <widget class="QWidget" name="InjectionRecordPage"/>
+    <widget class="QWidget" name="ManualModePage"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -88,32 +88,6 @@
    </property>
   </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>InjectionPlanPage</class>
-   <extends>QWidget</extends>
-   <header>injectionplanpage.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>InjectionRecordPage</class>
-   <extends>QWidget</extends>
-   <header>injectionrecordpage.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>ManualModePage</class>
-   <extends>QWidget</extends>
-   <header>manualmodepage.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>WeightModePage</class>
-   <extends>QWidget</extends>
-   <header>weightmodepage.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

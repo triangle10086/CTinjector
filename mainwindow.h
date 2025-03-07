@@ -32,10 +32,7 @@ private:
     InjectionRecordPage *injectionRecordPage;
 
 private slots:
-    void on_weightModeButton_clicked();
-    void on_manualModeButton_clicked();
-    void on_injectionPlanButton_clicked();
-    void on_injectionRecordButton_clicked();
+
 
 
 };
