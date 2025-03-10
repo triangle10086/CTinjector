@@ -32,7 +32,10 @@ private:
     InjectionRecordPage *injectionRecordPage;
 
 private slots:
-
+    void switchToWeightModePage();
+    void switchToManualModePage();
+    void switchToInjectionPlanPage();
+    void switchToInjectionRecordPage();
 
 
 };
