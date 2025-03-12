@@ -531,6 +531,9 @@ QWidget* ManualModePage::createPage(const QString &text) {
 
         // 注射速率和注射量布局（同一行）
         QHBoxLayout *rateVolumeLayout = new QHBoxLayout();
+        QPushButton *holdButton = new QPushButton("Hold");
+        holdButton->setCheckable(true);  // 设为可切换
+        holdButton->setChecked(false);  // 初始状态
         QLabel *labelRate = new QLabel("注射速率", page);
         QLabel *labelVolume = new QLabel("注射量", page);
 
@@ -545,6 +548,7 @@ QWidget* ManualModePage::createPage(const QString &text) {
         labelVolume->setMinimumSize(100, 30); // 设置注射量标签大小
 
         // 添加间距，将标签往右边移动
+        rateVolumeLayout->addWidget(holdButton);
         rateVolumeLayout->addSpacing(120); // 添加左边间距
         rateVolumeLayout->addWidget(labelRate);
         rateVolumeLayout->addSpacing(120); // 添加间距
